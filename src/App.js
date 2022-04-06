@@ -3,6 +3,7 @@ import { Route, Routes } from "react-router-dom";
 import MyLayout from "./MyLayout"
 import HomePage from "./HomePage"
 import AboutAntDesign from './Introduction/AboutAntDesign';
+import InstallAndInit from './Introduction/InstallAndInit';
 import InputDemo from './BasicComponents/InputDemo';
 import SelectionDemo from './BasicComponents/SelectionDemo';
 import StatisticsDemo from './ShowData/StatisticsDemo';
@@ -17,8 +18,9 @@ function App () {
     <Routes>
       <Route path="/" element={<MyLayout />}>
 
-        <Route index element={<HomePage />} />
-        <Route path="/AboutAntDesign" element={<AboutAntDesign />} />
+        <Route index element={<AboutAntDesign />} />
+        {/* <Route path="/" element={<AboutAntDesign />} /> */}
+        <Route path="/Install" element={<InstallAndInit />} />
         <Route path="/InputDemo" element={<InputDemo />} />
         <Route path="/SelectionDemo" element={<SelectionDemo />} />
         <Route path="/ImageDemo" element={<ImageDemo />} />
@@ -26,6 +28,8 @@ function App () {
         <Route path="/LinearDemo" element={<LinearDemo />} />
         <Route path="/MessageDemo" element={<MessageDemo />} />
         <Route path="/ResultDemo" element={<ResultDemo />} />
+        <Route path="/Pokedex" element={<HomePage />} />
+
 
       </Route>
     </Routes>

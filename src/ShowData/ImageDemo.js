@@ -102,13 +102,13 @@ export default function ImageDemo () {
                   <img alt="1" style={imgStyle} src="./bg1.jpg" />
                 </div>
                 <div>
-                  <img alt="1" style={imgStyle} src="./bg2.jpg" />
+                  <img alt="2" style={imgStyle} src="./bg2.jpg" />
                 </div>
                 <div>
-                  <img alt="1" style={imgStyle} src="./bg3.jpg" />
+                  <img alt="3" style={imgStyle} src="./bg3.jpg" />
                 </div>
                 <div>
-                  <img alt="1" style={imgStyle} src="./bg4.jpg" />
+                  <img alt="4" style={imgStyle} src="./bg4.jpg" />
                 </div>
               </Carousel>
             </Col>

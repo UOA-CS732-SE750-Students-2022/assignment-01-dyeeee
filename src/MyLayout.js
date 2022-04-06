@@ -4,20 +4,32 @@ import { InfoCircleOutlined, SettingOutlined, PictureOutlined, ColumnHeightOutli
 import { AlertOutlined, FileUnknownOutlined, CompassTwoTone } from '@ant-design/icons';
 import './MyLayout.css';
 import { Outlet, Link, useLocation } from 'react-router-dom';
+import { useState } from 'react';
 const { SubMenu } = Menu;
 const { Header, Content, Sider } = Layout;
 
 
 function MyLayout () {
+  const [inDex, setInDex] = useState(false);
   const location = useLocation();
+  console.log(location)
+  // if (location.pathname == '/Pokedex') {
+  //   setInDex(true);
+  // } else {
+  //   setInDex(false);
+  // }
 
   return (
     <Layout>
       <Header className="header">
         <div className="logo" />
-        <Menu theme="dark" mode="horizontal" defaultSelectedKeys={['1']}>
+        <Menu theme="dark" mode="horizontal" defaultSelectedKeys={['1']}
+          selectedKeys={location.pathname == '/Pokedex' ? "11" : "1"}
+        >
           <Menu.Item key="1" ><text style={{ color: 'white', fontWeight: 'bold' }}> CS732 AntDesign Demo</text></Menu.Item>
+          <Menu.Item key="11" > <Link to='/Pokedex'>My Pokedex</Link> </Menu.Item>
         </Menu>
+
       </Header>
       <Layout>
         <Sider width={256} className="site-layout-background">
@@ -28,14 +40,12 @@ function MyLayout () {
             defaultOpenKeys={['/', "sub1", "sub2", "sub3"]}
             style={{ height: '100%', borderRight: 0 }}
           >
-            <Menu.Item key="/" icon={<BulbTwoTone />}>
-              <Link to='/'>Home Page</Link>
-            </Menu.Item>
+
             <SubMenu key="sub1" icon={<CodeTwoTone />} title="Introduction">
-              <Menu.Item key='/AboutAntDesign' icon={<InfoCircleOutlined />}>
-                <Link to='/AboutAntDesign'>About Ant Design</Link>
+              <Menu.Item key='/' icon={<InfoCircleOutlined />}>
+                <Link to='/'>About This Demo</Link>
               </Menu.Item>
-              <Menu.Item key="2" icon={<SettingOutlined />}>Install and Initialize</Menu.Item>
+              <Menu.Item key="/Install" icon={<SettingOutlined />}><Link to='/Install'>Install and Initialize</Link></Menu.Item>
             </SubMenu>
             <SubMenu key="sub2" icon={<AppstoreTwoTone />} title="Basic Components">
               <Menu.Item key='/InputDemo' icon={<FormOutlined />}><Link to='/InputDemo' > Input Demo</Link></Menu.Item>
@@ -50,6 +60,9 @@ function MyLayout () {
               <Menu.Item key='/MessageDemo' icon={<AlertOutlined />}><Link to='/MessageDemo' > Message Demo</Link></Menu.Item>
               <Menu.Item key='/ResultDemo' icon={<FileUnknownOutlined />}><Link to='/ResultDemo'>Results Demo</Link></Menu.Item>
             </SubMenu>
+            <Menu.Item key="/Pokedex" icon={<BulbTwoTone />}>
+              <Link to='/Pokedex'>My Pokedex</Link>
+            </Menu.Item>
           </Menu>
         </Sider>
         <Layout style={{ padding: '14px 14px 14px' }}>
