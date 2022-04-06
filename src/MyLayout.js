@@ -18,6 +18,7 @@ function MyLayout () {
   // } else {
   //   setInDex(false);
   // }
+  document.title = "CS732 AntDesign Demo(ydu000)";
 
   return (
     <Layout>

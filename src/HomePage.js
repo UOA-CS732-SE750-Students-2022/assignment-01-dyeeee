@@ -9,7 +9,7 @@ const { Text, Link } = Typography;
 const { Meta } = Card;
 const { Panel } = Collapse;
 
-const colorDic = { Fire: "#FF9741", Grass: "#38BF4B", Flying: "#89AAE3", Poison: "#B567CE" }
+const colorDic = { Fire: "#FF9741", Water: "#3692DC", Grass: "#38BF4B", Flying: "#89AAE3", Poison: "#B567CE" }
 
 
 const labels_options = [{ value: 'Water' }, { value: 'Grass' }, { value: 'Fire' }, { value: 'Poison' }, { value: 'Flying' }];
@@ -88,13 +88,13 @@ export default function HomePage () {
             <Card.Grid hoverable={true} style={gridStyle}>
               <Space direction='vertical'>
                 <Avatar size={32} src={"./pokemon/BaseC.png"} />
-                BaseCompare
+                Base
               </Space>
             </Card.Grid>
             <Card.Grid hoverable={true} style={gridStyle}>
               <Space direction='vertical'>
                 <Avatar size={32} src={"./pokemon/BaseCa.png"} />
-                BaseCalcu
+                BaseCalc
               </Space>
             </Card.Grid>
 
