@@ -19,7 +19,7 @@ const gridStyle = {
   textAlign: 'center',
 };
 
-export default function HomePage () {
+export default function Pokedex () {
   return (
     <>
       <Row gutter={[16, 16]}>

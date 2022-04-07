@@ -1,72 +1,83 @@
 # CS732 Assignment1 Tech Demo - React UI Library: Ant Design
 
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Ant Design
 
-## Available Scripts
+* A design system for enterprise-level products.
+* Stable and highly reusable components and pages.
+* Uniform the user interface specs and reduce redundancies
+* Support for multiple frameworks
 
-In the project directory, you can run:
+# Ant Design of React
 
-### `npm start`
+* A React UI library that contains a set of high quality components
+  * Develop using TypeScript
+  * Compatible with all modern browsers
+  * Internationalized languages supported
+  * Open source on GitHub
+  * Customize UI components
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
 
-### `npm test`
+* Official tutorials and documentation
+  * https://ant.design/docs/react/introduce 
+  * See component effect and source code
+  * Test in online editor
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
+# About This Tech Demo
+* A React App with Ant Design UI Library
+ 
+* Components of AntDesign
+  * Basic Components
+    * Input Components
+    * Selection Components
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+  * Data Display Components
+    * Images View
+    * Statistics Components
+    * Linear Components
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+  * Feedback Components
+    * Web Messages View
+    * Page Result View
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+&nbsp;
 
-### `npm run eject`
+* Pokedex UI Design
+  * Search pokemon
+  * Show pokemon details
+  * Functions UI
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+# Install and Initialize Steps
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## 1. Node.js, React Framework and yarn  on your system
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## 2. Downlod project from Github
+  * Clone and Pull or Download Zip(suggested)
 
-## Learn More
+## 3. Install React-Router for this project
+  Executes cmd under the root path (/assignment-01-dyeeee-main)
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+```
+yarn add react-router-dom
+```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## 4. Install Ant Design for this project
+Executes cmd under the root path (/assignment-01-dyeeee-main)
 
-### Code Splitting
+```
+yarn add antd
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-### Analyzing the Bundle Size
+## 5. Initialize and Get start 
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+Executes cmd under the root path (/assignment-01-dyeeee-main)
+```
+yarn
+yarn start
+```
 
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+A react app running on localhost:3000/. 

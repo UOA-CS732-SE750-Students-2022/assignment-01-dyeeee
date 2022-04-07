@@ -1,7 +1,7 @@
 import './App.css';
 import { Route, Routes } from "react-router-dom";
 import MyLayout from "./MyLayout"
-import HomePage from "./HomePage"
+import Pokedex from "./Pokedex"
 import AboutAntDesign from './Introduction/AboutAntDesign';
 import InstallAndInit from './Introduction/InstallAndInit';
 import InputDemo from './BasicComponents/InputDemo';
@@ -28,7 +28,7 @@ function App () {
         <Route path="/LinearDemo" element={<LinearDemo />} />
         <Route path="/MessageDemo" element={<MessageDemo />} />
         <Route path="/ResultDemo" element={<ResultDemo />} />
-        <Route path="/Pokedex" element={<HomePage />} />
+        <Route path="/Pokedex" element={<Pokedex />} />
 
 
       </Route>
