@@ -52,19 +52,19 @@
 
 # Install and Initialize Steps
 
-## 1. Node.js, React Framework and yarn  on your system
+### 1. Node.js, React Framework and yarn  on your system
 
-## 2. Downlod project from Github
+### 2. Downlod project from Github
   * Clone and Pull or Download Zip(suggested)
 
-## 3. Install React-Router for this project
+### 3. Install React-Router for this project
   Executes cmd under the root path (/assignment-01-dyeeee-main)
 
 ```
 yarn add react-router-dom
 ```
 
-## 4. Install Ant Design for this project
+### 4. Install Ant Design for this project
 Executes cmd under the root path (/assignment-01-dyeeee-main)
 
 ```
@@ -72,7 +72,7 @@ yarn add antd
 ```
 
 
-## 5. Initialize and Get start 
+### 5. Initialize and Get start 
 
 Executes cmd under the root path (/assignment-01-dyeeee-main)
 ```
