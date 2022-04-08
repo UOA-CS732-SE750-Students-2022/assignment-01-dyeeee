@@ -1,14 +1,19 @@
 # CS732 Assignment1 Tech Demo - React UI Library: Ant Design
 
+## Contents
 
-# Ant Design
+* Ant Design
+*  About this Demo
+*  Screenshots
+
+## Ant Design
 
 * A design system for enterprise-level products.
 * Stable and highly reusable components and pages.
 * Uniform the user interface specs and reduce redundancies
 * Support for multiple frameworks
 
-# Ant Design of React
+### Ant Design of React
 
 * A React UI library that contains a set of high quality components
   * Develop using TypeScript
@@ -25,7 +30,7 @@
   * Test in online editor
 
 
-# About This Tech Demo
+## About This Tech Demo
 * A React App with Ant Design UI Library
  
 * Components of AntDesign
@@ -50,7 +55,7 @@
   * Functions UI
 
 
-# Install and Initialize Steps
+## Install and Initialize Steps
 
 ### 1. Node.js, React Framework and yarn  on your system
 
