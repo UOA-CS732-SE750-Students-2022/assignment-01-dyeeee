@@ -83,3 +83,9 @@ yarn start
 A react app running on localhost:3000/. 
 
 # Screenshot
+
+ ![image](https://github.com/UOA-CS732-SE750-Students-2022/assignment-01-dyeeee/blob/main/sc1.jpg) 
+
+ ![image](https://github.com/UOA-CS732-SE750-Students-2022/assignment-01-dyeeee/blob/main/sc2.jpg) 
+
+ ![image](https://github.com/UOA-CS732-SE750-Students-2022/assignment-01-dyeeee/blob/main/sc3.jpg) 
