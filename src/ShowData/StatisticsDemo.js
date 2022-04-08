@@ -6,14 +6,14 @@ import { Progress, Space, Table, Button } from 'antd';
 
 import { MinusOutlined, PlusOutlined } from '@ant-design/icons';
 
+// Pages for statistics Demos
 
 export default function StatisticsDemo () {
   const deadline = Date.now() + 10000 * 60 * 60 * 24 * 2; // Moment is also OK
-
-
   const [percent, setPercent] = useState(20);
 
 
+  // Binding for progress
   const increase = () => {
     let newPercent = percent + 10;
     if (newPercent > 100) {
@@ -39,9 +39,8 @@ export default function StatisticsDemo () {
         subTitle="Values, Table, Dashboard"
       />
 
-
       <Row gutter={[16, 16]}>
-
+        {/* Statistic Panel */}
         <Col span={24}>
           <Card title="Statistic Value" bordered={true} hoverable={true}
           >
@@ -78,15 +77,11 @@ export default function StatisticsDemo () {
                   pagination={{ defaultPageSize: 3 }}
                   dataSource={data} columns={columns} size="small" />
               </Col>
-
             </Row>
-
           </Card>
-
         </Col>
 
-
-
+        {/* Dashboard */}
         <Col span={24}>
           <Card title="Dashboard" bordered={true} hoverable={true}>
             <Row gutter={16} justify='center'>
@@ -161,13 +156,12 @@ export default function StatisticsDemo () {
         </Col>
 
 
-
-
       </Row>
     </>
   )
 }
 
+// Data for Table components
 const columns = [
   {
     title: 'Name',

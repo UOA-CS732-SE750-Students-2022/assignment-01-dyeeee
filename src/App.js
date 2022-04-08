@@ -13,9 +13,12 @@ import MessageDemo from './FeedbackComponents/MessageDemo'
 import ResultDemo from './FeedbackComponents/ResultDemo'
 // import ShowComponent from './components/ShowComponent'
 
+// Bind router for each page
+
 function App () {
   return (
     <Routes>
+      {/* Using router layout to locate all pages */}
       <Route path="/" element={<MyLayout />}>
 
         <Route index element={<AboutAntDesign />} />

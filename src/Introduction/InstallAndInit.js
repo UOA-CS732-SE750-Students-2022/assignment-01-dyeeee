@@ -3,6 +3,7 @@ import { Typography, Divider } from 'antd';
 
 const { Title, Paragraph, Text, Link } = Typography;
 
+// Page For Installation and project aspect
 
 export default function InstallAndInit () {
   return (
@@ -10,7 +11,7 @@ export default function InstallAndInit () {
       <Title level={3}>Install Ant Design for React</Title>
       <Paragraph>Execute the following installation command in the root directory of the react project</Paragraph>
       <Text code>yarn add antd</Text>
-
+      <Divider />
       <Title level={3}>Build this project</Title>
       <Title level={5}>1. Node.js, React Framework and yarn  on your system </Title>
       <Paragraph>As introduced in CS732</Paragraph>
@@ -35,6 +36,7 @@ export default function InstallAndInit () {
       <Text code>yarn</Text>
       <br />
       <Text code>yarn start</Text>
+      <Divider />
 
     </Typography>
   )

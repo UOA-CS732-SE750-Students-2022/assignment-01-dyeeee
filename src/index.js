@@ -6,6 +6,8 @@ import reportWebVitals from './reportWebVitals';
 
 import { BrowserRouter } from 'react-router-dom';
 
+// Project entry, the App is nested in BrowerRouter
+
 ReactDOM.render(
   <React.StrictMode>
     <BrowserRouter>

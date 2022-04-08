@@ -18,7 +18,6 @@ export default function SelectionDemo () {
   const onChange = e => {
     setValue(e.target.value);
   };
-
   const onChange2 = e => {
     setValue2(e.target.value);
   };
@@ -104,6 +103,7 @@ export default function SelectionDemo () {
     },
   ];
 
+  // Label
   const labels_options = [{ value: 'Red' }, { value: 'Yellow' }, { value: 'Blue' }, { value: 'Green' }];
 
 
@@ -121,7 +121,7 @@ export default function SelectionDemo () {
     },
   };
 
-  //Time
+  // TimePicker
   const { RangePicker } = TimePicker;
 
 
@@ -135,6 +135,8 @@ export default function SelectionDemo () {
       />
 
       <Row gutter={[16, 16]}>
+
+        {/* Ratio */}
         <Col span={12}>
           <Card title="Ratio - Single Selection" bordered={true} hoverable={true}
             style={{
@@ -167,6 +169,7 @@ export default function SelectionDemo () {
           </Card>
         </Col>
 
+        {/* CheckBox */}
         <Col span={12}>
           <Card title="CheckBox - Multiple CheckBox" bordered={true} hoverable={true}
             style={{
@@ -178,11 +181,10 @@ export default function SelectionDemo () {
             <Checkbox indeterminate={indeterminate} onChange={onCheckAllChange} checked={checkAll}>
               Select All Courses
             </Checkbox>
-
-
           </Card>
         </Col>
 
+        {/* Rate */}
         <Col span={12}>
           <Card title="Rate - Selcet a Rate" bordered={true} hoverable={true}
             style={{
@@ -208,6 +210,7 @@ export default function SelectionDemo () {
           </Card>
         </Col>
 
+        {/* Cascader */}
         <Col span={12}>
           <Card title="Selector - Selections, Cascader, Labels" bordered={true} hoverable={true}
             style={{
@@ -234,6 +237,7 @@ export default function SelectionDemo () {
           </Card>
         </Col>
 
+        {/* Slider */}
         <Col span={12}>
           <Card title="Selector - Select by Slider" bordered={true} hoverable={true}
             style={{
@@ -247,6 +251,7 @@ export default function SelectionDemo () {
           </Card>
         </Col>
 
+        {/* DatePicker */}
         <Col span={12}>
           <Card title="Time and Date Picker - Select Date" bordered={true} hoverable={true}
             style={{
@@ -271,6 +276,7 @@ export default function SelectionDemo () {
 
 }
 
+// render color for tags
 function tagRender (props) {
   const { label, value, closable, onClose } = props;
   const onPreventMouseDown = event => {
@@ -290,6 +296,7 @@ function tagRender (props) {
   );
 }
 
+// A slider bind with the inputvalue
 class IntegerStep extends Component {
   state = {
     inputValue: 7.3,

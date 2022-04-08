@@ -4,27 +4,12 @@ import { ClockCircleOutlined, UserOutlined, AudioOutlined, EditOutlined } from '
 
 const { Search } = Input;
 
-const suffix = (
-  <AudioOutlined
-    style={{
-      fontSize: 16,
-      color: '#1890ff',
-    }}
-  />
-);
-
-const onSearch = value => console.log(value);
-const { TextArea } = Input;
-
-const onChange = e => {
-  console.log('Change:', e.target.value);
-};
-
-
 
 
 
 export default function InputDemo () {
+
+  // Input ref
   const inputRef = useRef(null);
 
   const sharedProps = {
@@ -33,6 +18,15 @@ export default function InputDemo () {
     ref: inputRef,
   };
 
+  // Search state
+  const onSearch = value => console.log(value);
+  const { TextArea } = Input;
+
+  const onChange = e => {
+    console.log('Change:', e.target.value);
+  };
+
+  // Button disable
   const [disabled, setDisabled] = useState(true);
   const [value, setValue] = useState('99');
 
@@ -45,6 +39,7 @@ export default function InputDemo () {
         subTitle="Text, Number, Password, TextArea"
       />
       <Row gutter={[16, 16]}>
+        {/* Input Size */}
         <Col span={12}>
           <Card title="Basic - Size and Disabled" bordered={true} hoverable={true}
             style={{
@@ -61,12 +56,12 @@ export default function InputDemo () {
                   Toggle Disabled
                 </Button>
               </Space>
-
-
             </Space>
 
           </Card>
         </Col>
+
+        {/* Prefix */}
         <Col span={12} >
           <Card title="Prefix Holder and Search" bordered={true} hoverable={true}
             style={{
@@ -86,6 +81,7 @@ export default function InputDemo () {
           </Card>
         </Col>
 
+        {/* Number */}
         <Col span={12} >
           <Card title="Number and Password" bordered={true} hoverable={true}
             style={{
@@ -117,6 +113,7 @@ export default function InputDemo () {
           </Card>
         </Col>
 
+        {/* Status */}
         <Col span={12} >
           <Card title="Set Status" bordered={true} hoverable={true}
             style={{
@@ -130,6 +127,7 @@ export default function InputDemo () {
           </Card>
         </Col>
 
+        {/* TextArea */}
         <Col span={12} >
           <Card title="TextArea - Focus" bordered={true} hoverable={true}
             style={{
@@ -171,6 +169,7 @@ export default function InputDemo () {
           </Card>
         </Col>
 
+        {/* TextArea */}
         <Col span={12} >
           <Card title="TextArea - Autosize, Words Count, Clear Icon" bordered={true} hoverable={true}
             style={{

@@ -1,38 +1,21 @@
 import { Image, Spin, Skeleton, Carousel, Avatar } from 'antd';
 import { Button, Space, PageHeader } from 'antd';
 import { Card, Col, Row } from 'antd';
-import { EditOutlined, EllipsisOutlined, SettingOutlined, LoadingOutlined } from '@ant-design/icons';
 
 import { React, useState } from 'react'
 
-import styles from './ImageDemo.css';
-
 const { Meta } = Card;
 
-const contentStyle = {
-  height: '360px',
-  color: '#fff',
-  lineHeight: '160px',
-  textAlign: 'center',
-  background: '#364d79',
-};
-
-const gridStyle = {
-  width: '100%',
-  textAlign: 'center',
-};
-
+// style
 const imgStyle = {
   height: '100%',
   objectFit: 'cover',
   width: '100%'
 }
 
+// Page for showing the images
+
 export default function ImageDemo () {
-
-
-  const [random, setRandom] = useState();
-
   return (
     <>
       <PageHeader
@@ -42,9 +25,7 @@ export default function ImageDemo () {
       />
 
       <Row gutter={[16, 16]} justify="center">
-
-
-
+        {/* spac={24} to hold all space */}
         <Col span={24} >
           <Card title="Image Component - View as Album, Loading View" bordered={true} hoverable={true}
           >
@@ -87,13 +68,13 @@ export default function ImageDemo () {
                 >
                   Reload
                 </Button>
-
               </Space>
             </Col>
 
           </Card>
         </Col>
 
+        {/* Carousel View */}
         <Col span={24} >
           <Card title="Carousel View, Autoplay" bordered={true} hoverable={true}>
             <Col span={18} offset={3} >
@@ -113,9 +94,9 @@ export default function ImageDemo () {
               </Carousel>
             </Col>
           </Card>
-
         </Col>
 
+        {/* Card View */}
         <Col span={24} >
           <Card title="Card View" bordered={true} hoverable={true}>
             <Card

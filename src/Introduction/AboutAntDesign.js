@@ -3,9 +3,12 @@ import { Typography, Divider } from 'antd';
 
 const { Title, Paragraph, Text, Link } = Typography;
 
+// Page For Introduction to Ant Design and This Demo
+
 export default function AboutAntDesign () {
   return (
     <Typography>
+      {/* Part 1 */}
       <Title level={3}>Ant Design <Link href="https://ant.design/">(Official site)</Link></Title>
       <Paragraph>
         <ul>
@@ -24,6 +27,7 @@ export default function AboutAntDesign () {
         </ul>
       </Paragraph>
       <Divider />
+      {/* Part 2 */}
       <Title level={3}>Ant Design of React</Title>
       <Paragraph>
         <img width="150" src="https://gw.alipayobjects.com/zos/rmsportal/KDpgvguMpGfqaHPjicRK.svg"></img><span>+</span><img width="160" src="https://gw.alipayobjects.com/zos/antfincdn/aPkFc8Sj7n/method-draw-image.svg"></img>
@@ -68,6 +72,8 @@ export default function AboutAntDesign () {
         </ul>
       </Paragraph>
       <Divider />
+
+      {/* Part 3 */}
       <Title level={3}>About This Tech Demo <Link href="https://github.com/UOA-CS732-SE750-Students-2022/assignment-01-dyeeee">(Details in GitHub)</Link></Title>
       <Paragraph>
         In this project, I built a Demo website based on React and introduced the use of multiple Ant Design components in three parts: Basic components, Data Display components, and Feedback components. In addition, I used the relevant components to build a Pokemon illustrated page, similar to Execise5 in the classroom. Still, we can see that with the help of Ant Design, my UI interface has become very nice.

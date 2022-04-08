@@ -8,9 +8,9 @@ import { useState } from 'react';
 const { SubMenu } = Menu;
 const { Header, Content, Sider } = Layout;
 
+// Layout JS, React-router-dom
 
 function MyLayout () {
-  const [inDex, setInDex] = useState(false);
   const location = useLocation();
   console.log(location)
   // if (location.pathname == '/Pokedex') {
@@ -22,6 +22,7 @@ function MyLayout () {
 
   return (
     <Layout>
+      {/* Header */}
       <Header className="header">
         <div className="logo" />
         <Menu theme="dark" mode="horizontal" defaultSelectedKeys={['1']}
@@ -34,6 +35,7 @@ function MyLayout () {
       </Header>
       <Layout>
         <Sider width={256} className="site-layout-background">
+          {/* Menu */}
           <Menu
             mode="inline"
             selectedKeys={location.pathname}
@@ -76,6 +78,7 @@ function MyLayout () {
               minHeight: 280,
             }}
           >
+            {/* Page Content  here in Outlet */}
             <Outlet />
           </Content>
         </Layout>

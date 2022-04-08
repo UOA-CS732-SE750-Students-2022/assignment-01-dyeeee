@@ -2,18 +2,16 @@ import { React, useState, Component } from 'react';
 import { PageHeader, Cascader, Select, Tag, Row, Col, Card, Space, Divider } from 'antd';
 import { Alert, message, Button, Modal, notification, Drawer } from 'antd';
 
+// import icons
 import {
   RadiusUpleftOutlined,
   RadiusUprightOutlined,
-  RadiusBottomleftOutlined,
-  RadiusBottomrightOutlined,
   BorderTopOutlined,
-  BorderBottomOutlined,
 } from '@ant-design/icons';
 
 export default function MessageDemo () {
 
-
+  // States for message
   const success = () => {
     message.success('Success Message');
   };
@@ -26,7 +24,7 @@ export default function MessageDemo () {
     message.warning('Warning Message');
   };
 
-  // Modal
+  // Modal and modals state
   const [isModalVisible, setIsModalVisible] = useState(false);
 
   const showModal = () => {
@@ -47,6 +45,8 @@ export default function MessageDemo () {
       content: 'some messages...some messages...',
     });
   }
+
+  // Notification
   const openNotification = placement => {
     notification.info({
       message: `Notification ${placement}`,
@@ -80,6 +80,7 @@ export default function MessageDemo () {
       />
 
       <Row gutter={[16, 16]}>
+        {/* Left side's components */}
         <Col span={12}>
           <Card title="Alert Messages" bordered={true} hoverable={true}>
             <Space direction='vertical' size={10}>
@@ -113,8 +114,10 @@ export default function MessageDemo () {
 
         </Col>
 
+        {/* Right side's components */}
         <Col span={12}>
           <Card title="Pop Messages - Click to see pop componentss" bordered={true} hoverable={true}>
+            {/* Message */}
             <Divider orientation="left">Message</Divider>
             <Space>
               <Button onClick={success} type="primary"
@@ -125,8 +128,8 @@ export default function MessageDemo () {
                 style={{ background: "#F0AF41", borderColor: "#F0AF41" }}>Warning</Button>
             </Space>
 
+            {/* Modal */}
             <Divider orientation="left">Modal</Divider>
-
             <Space>
               <Button type="primary" onClick={showModal}>
                 Basic Modal
@@ -140,8 +143,9 @@ export default function MessageDemo () {
               <Button onClick={warningModal}
                 type="primary" style={{ background: "#F0AF41", borderColor: "#F0AF41" }}>
                 Status Modal</Button>
-
             </Space>
+
+            {/* Notification */}
             <Divider orientation="left">Notification</Divider>
             <Space>
               <Button type="primary" style={{ background: "#FABF89", borderColor: "#FABF89" }}
@@ -164,9 +168,8 @@ export default function MessageDemo () {
               </Button>
             </Space>
 
-
+            {/* Drawer */}
             <Divider orientation="left">Drawer</Divider>
-
             <Space>
               <Button type="primary" onClick={showDefaultDrawer}>
                 Default Drawer
@@ -175,6 +178,7 @@ export default function MessageDemo () {
                 Large Drawer
               </Button>
             </Space>
+
             <Drawer
               title={`Drawer`}
               placement="right"
@@ -187,13 +191,12 @@ export default function MessageDemo () {
                   <Button type="primary" onClick={onClose}>
                     OK
                   </Button>
-                </Space>
-              }
-            >
+                </Space>}>
               <p>Ant</p>
               <p>Design</p>
               <p>Drawer</p>
             </Drawer>
+
           </Card>
         </Col>
       </Row>

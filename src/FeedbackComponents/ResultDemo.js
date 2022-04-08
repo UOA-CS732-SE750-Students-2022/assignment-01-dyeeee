@@ -3,6 +3,8 @@ import { Outlet, Link } from 'react-router-dom';
 import { Result } from 'antd';
 import React from 'react';
 
+// Webpage Result
+
 export default function ResultDemo () {
   return (
     <>

@@ -17,6 +17,7 @@ export default function LinearDemo () {
       />
 
       <Row gutter={[16, 16]}>
+        {/* spca={8} to take 1/3 spaces, TimeLine */}
         <Col span={8}>
           <Card title="TimeLine - Show Things" bordered={true} hoverable={true}>
             <Timeline mode={'left'}>
@@ -34,6 +35,8 @@ export default function LinearDemo () {
             </Timeline>
           </Card>
         </Col>
+
+        {/* Step */}
         <Col span={8}>
           <Card title="StepLine - Click to move" bordered={true} hoverable={true}>
             <Steps current={curStep} onChange={onStepChange} direction="vertical" progressDot={true}>
@@ -51,6 +54,8 @@ export default function LinearDemo () {
             </Steps>
           </Card>
         </Col>
+
+        {/* Tree */}
         <Col span={8}>
           <Card title="Tree - Show Files" bordered={true} hoverable={true}>
             <Tree
@@ -66,7 +71,7 @@ export default function LinearDemo () {
   )
 }
 
-
+// Data For Tree components
 const treeData = [
   {
     title: 'User',
