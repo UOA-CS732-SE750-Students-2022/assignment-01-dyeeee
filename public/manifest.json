@@ -1,0 +1,25 @@
+{
+  "short_name": "CS732 AntDesign Demo",
+  "name": "CS732 Assignment1: AntDesign Demo",
+  "icons": [
+    {
+      "src": "f2.ico",
+      "sizes": "64x64 32x32 24x24 16x16",
+      "type": "image/x-icon"
+    },
+    {
+      "src": "pokeball.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "pokeball.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}
